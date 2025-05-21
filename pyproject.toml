@@ -1,0 +1,18 @@
+[project]
+name = "hello"
+version = "0.1.0"
+description = "My hello world project"
+authors = [
+    {name = "Lincoln S. Rocha",email = "lincoln@dc.ufc.br"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "hello", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
